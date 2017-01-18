@@ -1,0 +1,164 @@
+.article-img{
+  width: 100%;
+  height: 300px;
+  margin-top: 20px; 
+}
+.article-user-img-wrap{
+  width: 100%; 
+  position: relative;
+  padding-bottom: 100%;
+}
+.article-user-img{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+.comment-container{
+  border-radius: 10px;
+  background-color: #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  margin: 10px 10px 10px 10px;
+}
+
+.page-header{
+  border-bottom-color: #09d;
+}
+
+.article-img img{
+  width: 90%;
+  height:100%;
+  display:block;
+  margin:auto;
+}
+
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+
+
+.logout-btn{
+  position: absolute;  
+  bottom: 0;
+  left: 0;
+}
+
+.start-link{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.vertical-margin {
+  margin-top: 8px;
+  margin-bottom : 8px;
+}
+.margin-8{
+  margin: 8px 8px 8px 8px;
+}
+
+.nav-body {
+  padding-top: 50px;
+}
+
+/*
+* Top navigation
+* Hide default border to remove 1px line.
+*/
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+* Sidebar
+*/
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/*
+* Main content
+*/
+
+/*.main {
+padding: 20px;
+}*/
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+.blog-item{
+  height: 320px;
+  background-color: #efefef;
+  padding: 0 0 0 0;
+  word-wrap: break-word;				
+}
+
+
+.blog-img {
+  width: 100%;
+  height: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Set the image to fill its parent and make transparent */
+.blog-img img {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+
+.blog-body {
+  margin:10px 10px 10px 10px;
+  width:96%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-height: 20px;        /* fallback */
+  max-height: 60px;       /* fallback */
+}
+
+.blog-title{
+  padding: 100px 100px 100px 100px;
+  width:96%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-height: 20px;        /* fallback */
+  max-height: 20px;       /* fallback */
+  }​
